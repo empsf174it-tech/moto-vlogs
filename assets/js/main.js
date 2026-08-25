@@ -399,3 +399,21 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 });
+
+// Back to Top
+document.addEventListener('DOMContentLoaded', () => {
+  const backToTop = document.getElementById('back-to-top');
+  if (!backToTop) return;
+
+  const toggleBackToTop = () => {
+    backToTop.classList.toggle('visible', window.scrollY > 500);
+  };
+
+  toggleBackToTop();
+  window.addEventListener('scroll', toggleBackToTop, { passive: true });
+
+  backToTop.addEventListener('click', () => {
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    window.scrollTo({ top: 0, behavior: reduceMotion ? 'auto' : 'smooth' });
+  });
+});

@@ -1228,8 +1228,8 @@ section {
 }
 
 .author-avatar {
-  width: 44px;
-  height: 44px;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
   background-color: var(--color-border);
   display: flex;
@@ -1237,6 +1237,8 @@ section {
   justify-content: center;
   font-weight: 500;
   color: var(--color-primary);
+  object-fit: cover;
+  flex-shrink: 0;
 }
 
 .author-info {
@@ -1869,5 +1871,44 @@ select.form-control {
   .cta-form {
     flex-direction: column;
     width: 100%;
+  }
+}
+
+/* Back to Top */
+.back-to-top {
+  position: fixed;
+  right: calc(var(--spacing-unit) * 4);
+  bottom: calc(var(--spacing-unit) * 4);
+  z-index: 900;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  background-color: var(--color-surface);
+  color: var(--color-primary);
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity var(--transition), transform var(--transition), visibility var(--transition);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  border-color: var(--color-primary);
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .back-to-top {
+    transition: none;
   }
 }
