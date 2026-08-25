@@ -1414,7 +1414,7 @@ section {
    -------------------------------------------------------------------------- */
 .cta-banner-wrapper {
   background: linear-gradient(rgba(9, 11, 14, 0.9), rgba(9, 11, 14, 0.9)),
-              url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070');
+              url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2070');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -1429,7 +1429,7 @@ section {
 
 [data-theme="light"] .cta-banner-wrapper {
   background: linear-gradient(rgba(250, 247, 242, 0.9), rgba(250, 247, 242, 0.9)),
-              url('https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=2070');
+              url('https://images.unsplash.com/photo-1469854523086-cc02fe5d8800?q=80&w=2070');
   background-size: cover;
   background-position: center;
 }
