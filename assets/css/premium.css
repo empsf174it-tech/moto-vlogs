@@ -266,8 +266,7 @@ section { padding: clamp(72px, 10vw, 148px) 0; }
 }
 
 .logo { font-family: var(--font-display); font-weight: 700; letter-spacing: -0.04em; }
-.logo svg { color: var(--color-primary); transition: transform .6s var(--ease); }
-.logo:hover svg { transform: rotate(180deg); }
+.logo svg { color: var(--color-primary); }
 
 .nav-link { font-size: .93rem; letter-spacing: -0.005em; color: var(--color-text-muted); }
 .nav-link:hover, .nav-link.active { color: var(--color-text); }
