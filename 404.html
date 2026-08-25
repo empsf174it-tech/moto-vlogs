@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Off the Trail | MOTO VLOGZ 404</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23fe6e24'%3E%3Cpath d='M19 15c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3Zm-14 0c-1.66 0-3-1.34-3-3s1.34-3 3-3 3 1.34 3 3-1.34 3-3 3Zm14-8c-2.76 0-5 2.24-5 5h-4c0-2.76-2.24-5-5-5S1 9.24 1 12s2.24 5 5 5h12c2.76 0 5-2.24 5-5s-2.24-5-5-5Z'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/premium.css">
+  <style>
+    .error-wrapper {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: calc(var(--spacing-unit) * 4);
+      background: radial-gradient(circle at center, rgba(254, 110, 36, 0.05), transparent 70%), #090b0e;
+    }
+    [data-theme="light"] .error-wrapper {
+      background: radial-gradient(circle at center, rgba(254, 110, 36, 0.03), transparent 70%), #faf7f2;
+    }
+    .error-icon {
+      color: var(--color-primary);
+      margin-bottom: calc(var(--spacing-unit) * 4);
+      animation: float 4s ease-in-out infinite;
+    }
+    .error-code {
+      font-family: var(--font-headings);
+      font-size: clamp(4rem, 10vw, 8rem);
+      font-weight: 500;
+      line-height: 1;
+      color: var(--color-text);
+      letter-spacing: -0.04em;
+    }
+    .error-message {
+      font-size: var(--font-lead-size);
+      color: var(--color-text-muted);
+      max-width: 500px;
+      margin: calc(var(--spacing-unit) * 2) 0 calc(var(--spacing-unit) * 6);
+    }
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-12px); }
+    }
+  </style>
+</head>
+<body>
+  <main class="error-wrapper">
+    <div class="error-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" width="80" height="80">
+        <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+        <path d="m15 9-6 6M9 9l6 6"/>
+      </svg>
+    </div>
+    <div class="error-code">404</div>
+    <h1 style="font-weight: var(--font-h3-weight); font-size: var(--font-h3-size); text-transform: uppercase;">Lost Off-Trail</h1>
+    <p class="error-message">It looks like you've hit a dead end. This path doesn't exist in our routing database. Let's get you back on the main trail.</p>
+    <a href="./index.html" class="btn btn-primary">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="18" height="18">
+        <path d="m15 18-6-6 6-6"/>
+      </svg>
+      <span>Back to Main Trail</span>
+    </a>
+  </main>
+</body>
+</html>
