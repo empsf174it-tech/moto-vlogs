@@ -63,7 +63,7 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
-  scroll-padding-top: 96px;
+  scroll-padding-top: 92px;
 }
 
 body {
@@ -253,15 +253,19 @@ section { padding: clamp(72px, 10vw, 148px) 0; }
   height: 68px;
   padding: 0 10px 0 22px;
   border: 1px solid transparent;
-  transition: background-color .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease);
+  transition: background-color .4s var(--ease), border-color .4s var(--ease), box-shadow .4s var(--ease), border-radius .4s var(--ease), padding .4s var(--ease);
 }
 
-.header-nav.scrolled { padding: 10px 0; }
+.header-nav.scrolled { padding: 0; }
 
 .header-nav.scrolled .nav-container {
-  background: color-mix(in srgb, var(--color-bg) 72%, transparent);
+  max-width: 100%;
+  border-radius: 0;
+  padding: 0 clamp(20px, 5vw, 60px);
+  background: color-mix(in srgb, var(--color-bg) 88%, transparent);
   backdrop-filter: var(--backdrop-blur);
-  border-color: var(--color-border);
+  border-color: transparent;
+  border-bottom-color: var(--color-border);
   box-shadow: var(--shadow);
 }
 

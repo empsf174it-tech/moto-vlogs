@@ -1912,3 +1912,18 @@ select.form-control {
     transition: none;
   }
 }
+
+/* Anchor offset: keep section headings clear of the fixed navbar */
+section,
+[id],
+:target {
+  scroll-margin-top: 92px;
+}
+
+@media (max-width: 768px) {
+  section,
+  [id],
+  :target {
+    scroll-margin-top: 88px;
+  }
+}
