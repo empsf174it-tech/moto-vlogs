@@ -112,8 +112,7 @@
         </button>
 
         <!-- Primary CTA (Step 4) -->
-        <a href="https://youtube.com/c/motovlogz" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-          data-i18n="nav.cta">Follow the Journey</a>
+        <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Follow the Journey</a>
       </div>
 
       <!-- Hamburger Button (Step 4 drawer control) -->
@@ -160,8 +159,7 @@
         </button>
       </div>
       <!-- Primary Mobile CTA -->
-      <a href="https://youtube.com/c/motovlogz" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-        data-i18n="nav.cta">Follow the Journey</a>
+      <a href="#contact" class="btn btn-primary" data-i18n="nav.cta">Follow the Journey</a>
     </div>
   </div>
 
@@ -197,7 +195,7 @@
               allowfullscreen></iframe>
 
             <div id="video-overlay-play" class="video-overlay-play">
-              <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&amp;w=800"
+              <img src="assets/images/hero-video-cover.webp"
                 alt="Video cover showing adventure motorcycle on gravel mountain pass" class="video-thumb"
                 loading="eager">
               <div class="play-circle">
@@ -210,7 +208,6 @@
         </div>
       </div>
     </section>
-
     <!-- TRUST BAR / STATS STRIP (Step 9) -->
     <div class="trust-bar">
       <div class="container stats-grid">
@@ -243,7 +240,7 @@
 
         <div class="about-grid">
           <div class="about-image-wrapper">
-            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&amp;w=800"
+            <img src="assets/images/about-alex-vance.webp"
               alt="Alex Vance sitting on his loaded BMW GS adventure bike in a gravel road desert landscape"
               class="about-image" loading="lazy">
           </div>
@@ -324,8 +321,8 @@
           <!-- Video 1 (Expedition) -->
           <article class="card-rule video-card" data-category="expedition">
             <div class="video-thumb-container">
-              <img src="https://images.unsplash.com/photo-1599819811279-d5ad9cccf838?q=80&amp;w=600"
-                alt="Mountain pass with gravel road in Patagonia" class="video-thumb" loading="lazy">
+              <img src="assets/images/video-patagonia-pass.webp" alt="Mountain pass with gravel road in Patagonia"
+                class="video-thumb" loading="lazy">
               <span class="video-duration">18:42</span>
               <div class="video-play-overlay">
                 <div class="video-play-circle">
@@ -349,7 +346,7 @@
           <!-- Video 2 (Gear) -->
           <article class="card-rule video-card" data-category="gear">
             <div class="video-thumb-container">
-              <img src="https://images.unsplash.com/photo-1568772585407-9361f9bf3a87?q=80&amp;w=600"
+              <img src="assets/images/video-helmet-review.webp"
                 alt="Adventure helmet with action camera mount sitting on bike seat" class="video-thumb" loading="lazy">
               <span class="video-duration">12:15</span>
               <div class="video-play-overlay">
@@ -374,7 +371,7 @@
           <!-- Video 3 (Expedition) -->
           <article class="card-rule video-card" data-category="expedition">
             <div class="video-thumb-container">
-              <img src="https://images.unsplash.com/photo-1547549082-6bc09f2049ae?q=80&amp;w=600"
+              <img src="assets/images/video-himalayan-mud.webp"
                 alt="Muddy river crossing trail in the Himalayas during rain" class="video-thumb" loading="lazy">
               <span class="video-duration">25:03</span>
               <div class="video-play-overlay">
@@ -399,7 +396,7 @@
           <!-- Video 4 (Tips) -->
           <article class="card-rule video-card" data-category="tips">
             <div class="video-thumb-container">
-              <img src="https://images.unsplash.com/photo-1485965120184-e220f721d03e?q=80&amp;w=600"
+              <img src="assets/images/video-packing-guide.webp"
                 alt="Fully packed adventure bike standing on forest floor trail" class="video-thumb" loading="lazy">
               <span class="video-duration">15:50</span>
               <div class="video-play-overlay">
@@ -437,23 +434,35 @@
           <article class="card-rule route-card">
             <!-- Simulated interactive route map (Step 15 Map placeholder) -->
             <div class="route-map-placeholder">
-              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Ruta 40 &amp; Carretera Austral Map">
+              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img"
+                aria-label="Ruta 40 &amp; Carretera Austral Map">
                 <defs>
                   <linearGradient id="routeGrad1" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="hsl(36,96%,62%)"/>
-                    <stop offset="60%" stop-color="hsl(24,96%,56%)"/>
-                    <stop offset="100%" stop-color="hsl(14,88%,52%)"/>
+                    <stop offset="0%" stop-color="hsl(36,96%,62%)" />
+                    <stop offset="60%" stop-color="hsl(24,96%,56%)" />
+                    <stop offset="100%" stop-color="hsl(14,88%,52%)" />
                   </linearGradient>
                   <pattern id="routeGrid1" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/>
+                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18" />
                   </pattern>
                 </defs>
 
-                <rect width="320" height="180" fill="url(#routeGrid1)"/>
-                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1"><path d="M-10,132 C40,112 74,150 120,128 C168,105 210,140 262,118 C290,106 312,118 330,110" opacity=".3"/><path d="M-10,104 C44,84 80,120 132,98 C182,77 214,110 268,88 C296,76 314,88 330,80" opacity=".22"/><path d="M-10,70 C48,50 88,86 140,64 C190,43 222,74 274,54 C300,44 316,54 330,48" opacity=".16"/></g>
+                <rect width="320" height="180" fill="url(#routeGrid1)" />
+                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M-10,132 C40,112 74,150 120,128 C168,105 210,140 262,118 C290,106 312,118 330,110"
+                    opacity=".3" />
+                  <path d="M-10,104 C44,84 80,120 132,98 C182,77 214,110 268,88 C296,76 314,88 330,80" opacity=".22" />
+                  <path d="M-10,70 C48,50 88,86 140,64 C190,43 222,74 274,54 C300,44 316,54 330,48" opacity=".16" />
+                </g>
 
-                <path class="route-trail-ghost" d="M28,140 C64,120 52,86 84,74 C118,61 120,104 152,96 C186,88 178,44 214,40 C244,37 266,58 292,34" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".22"/>
-                <path class="map-svg-trail route-trail" d="M28,140 C64,120 52,86 84,74 C118,61 120,104 152,96 C186,88 178,44 214,40 C244,37 266,58 292,34" fill="none" stroke="url(#routeGrad1)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="route-trail-ghost"
+                  d="M28,140 C64,120 52,86 84,74 C118,61 120,104 152,96 C186,88 178,44 214,40 C244,37 266,58 292,34"
+                  fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  opacity=".22" />
+                <path class="map-svg-trail route-trail"
+                  d="M28,140 C64,120 52,86 84,74 C118,61 120,104 152,96 C186,88 178,44 214,40 C244,37 266,58 292,34"
+                  fill="none" stroke="url(#routeGrad1)" stroke-width="3.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
               <span class="caption route-map-caption">Ruta 40 &amp; Carretera Austral Map</span>
             </div>
@@ -493,23 +502,35 @@
           <!-- Route 2 -->
           <article class="card-rule route-card">
             <div class="route-map-placeholder">
-              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Silk Road Desert Route Map">
+              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img"
+                aria-label="Silk Road Desert Route Map">
                 <defs>
                   <linearGradient id="routeGrad2" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="hsl(36,96%,62%)"/>
-                    <stop offset="60%" stop-color="hsl(24,96%,56%)"/>
-                    <stop offset="100%" stop-color="hsl(14,88%,52%)"/>
+                    <stop offset="0%" stop-color="hsl(36,96%,62%)" />
+                    <stop offset="60%" stop-color="hsl(24,96%,56%)" />
+                    <stop offset="100%" stop-color="hsl(14,88%,52%)" />
                   </linearGradient>
                   <pattern id="routeGrid2" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/>
+                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18" />
                   </pattern>
                 </defs>
 
-                <rect width="320" height="180" fill="url(#routeGrid2)"/>
-                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1"><path d="M-10,58 C36,40 76,74 126,58 C176,42 214,74 264,58 C292,49 314,58 330,52" opacity=".28"/><path d="M-10,90 C40,72 82,106 132,90 C182,74 218,106 268,90 C296,81 314,90 330,84" opacity=".2"/><path d="M-10,124 C44,106 86,140 136,124 C186,108 222,140 272,124 C298,115 316,124 330,118" opacity=".14"/></g>
+                <rect width="320" height="180" fill="url(#routeGrid2)" />
+                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M-10,58 C36,40 76,74 126,58 C176,42 214,74 264,58 C292,49 314,58 330,52" opacity=".28" />
+                  <path d="M-10,90 C40,72 82,106 132,90 C182,74 218,106 268,90 C296,81 314,90 330,84" opacity=".2" />
+                  <path d="M-10,124 C44,106 86,140 136,124 C186,108 222,140 272,124 C298,115 316,124 330,118"
+                    opacity=".14" />
+                </g>
 
-                <path class="route-trail-ghost" d="M24,58 C58,40 74,72 108,66 C144,60 148,116 184,116 C218,116 220,72 252,68 C276,65 284,96 300,128" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".22"/>
-                <path class="map-svg-trail route-trail" d="M24,58 C58,40 74,72 108,66 C144,60 148,116 184,116 C218,116 220,72 252,68 C276,65 284,96 300,128" fill="none" stroke="url(#routeGrad2)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="route-trail-ghost"
+                  d="M24,58 C58,40 74,72 108,66 C144,60 148,116 184,116 C218,116 220,72 252,68 C276,65 284,96 300,128"
+                  fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  opacity=".22" />
+                <path class="map-svg-trail route-trail"
+                  d="M24,58 C58,40 74,72 108,66 C144,60 148,116 184,116 C218,116 220,72 252,68 C276,65 284,96 300,128"
+                  fill="none" stroke="url(#routeGrad2)" stroke-width="3.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
               <span class="caption route-map-caption">Silk Road Desert Route Map</span>
             </div>
@@ -548,23 +569,35 @@
           <!-- Route 3 -->
           <article class="card-rule route-card">
             <div class="route-map-placeholder">
-              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Iceland Volcanic Trails Map">
+              <svg class="route-map-svg" viewBox="0 0 320 180" preserveAspectRatio="xMidYMid slice" role="img"
+                aria-label="Iceland Volcanic Trails Map">
                 <defs>
                   <linearGradient id="routeGrad3" x1="0" y1="0" x2="1" y2="1">
-                    <stop offset="0%" stop-color="hsl(36,96%,62%)"/>
-                    <stop offset="60%" stop-color="hsl(24,96%,56%)"/>
-                    <stop offset="100%" stop-color="hsl(14,88%,52%)"/>
+                    <stop offset="0%" stop-color="hsl(36,96%,62%)" />
+                    <stop offset="60%" stop-color="hsl(24,96%,56%)" />
+                    <stop offset="100%" stop-color="hsl(14,88%,52%)" />
                   </linearGradient>
                   <pattern id="routeGrid3" width="20" height="20" patternUnits="userSpaceOnUse">
-                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18"/>
+                    <path d="M20 0H0V20" fill="none" stroke="currentColor" stroke-width=".5" opacity=".18" />
                   </pattern>
                 </defs>
 
-                <rect width="320" height="180" fill="url(#routeGrid3)"/>
-                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1"><path d="M-10,46 C42,66 78,28 128,48 C178,68 212,32 262,52 C290,63 314,50 330,58" opacity=".28"/><path d="M-10,86 C44,106 82,68 132,88 C182,108 216,72 266,92 C294,103 316,90 330,98" opacity=".2"/><path d="M-10,128 C46,148 86,110 136,130 C186,150 220,114 270,134 C296,145 316,132 330,140" opacity=".14"/></g>
+                <rect width="320" height="180" fill="url(#routeGrid3)" />
+                <g class="route-contours" fill="none" stroke="currentColor" stroke-width="1">
+                  <path d="M-10,46 C42,66 78,28 128,48 C178,68 212,32 262,52 C290,63 314,50 330,58" opacity=".28" />
+                  <path d="M-10,86 C44,106 82,68 132,88 C182,108 216,72 266,92 C294,103 316,90 330,98" opacity=".2" />
+                  <path d="M-10,128 C46,148 86,110 136,130 C186,150 220,114 270,134 C296,145 316,132 330,140"
+                    opacity=".14" />
+                </g>
 
-                <path class="route-trail-ghost" d="M52,44 C86,34 106,64 96,92 C86,120 116,146 152,142 C190,138 206,110 196,84 C186,58 214,38 248,48 C272,55 278,86 268,118" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" opacity=".22"/>
-                <path class="map-svg-trail route-trail" d="M52,44 C86,34 106,64 96,92 C86,120 116,146 152,142 C190,138 206,110 196,84 C186,58 214,38 248,48 C272,55 278,86 268,118" fill="none" stroke="url(#routeGrad3)" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+                <path class="route-trail-ghost"
+                  d="M52,44 C86,34 106,64 96,92 C86,120 116,146 152,142 C190,138 206,110 196,84 C186,58 214,38 248,48 C272,55 278,86 268,118"
+                  fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+                  opacity=".22" />
+                <path class="map-svg-trail route-trail"
+                  d="M52,44 C86,34 106,64 96,92 C86,120 116,146 152,142 C190,138 206,110 196,84 C186,58 214,38 248,48 C272,55 278,86 268,118"
+                  fill="none" stroke="url(#routeGrad3)" stroke-width="3.4" stroke-linecap="round"
+                  stroke-linejoin="round" />
               </svg>
               <span class="caption route-map-caption">Iceland Volcanic Trails Map</span>
             </div>
@@ -615,7 +648,7 @@
           <!-- Gear Item 1 -->
           <article class="card-rule gear-card">
             <div class="gear-image-box">
-              <img src="https://images.unsplash.com/photo-1591637333184-19aa84b3e01f?q=80&amp;w=800"
+              <img src="assets/images/gear-arai-xd4-helmet.webp"
                 alt="Arai XD4 adventure helmet resting on a motorcycle seat" class="gear-img" loading="lazy">
             </div>
             <div class="gear-card-header">
@@ -700,7 +733,7 @@
           <!-- Gear Item 2 -->
           <article class="card-rule gear-card">
             <div class="gear-image-box">
-              <img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc?q=80&amp;w=800"
+              <img src="assets/images/gear-mosko-panniers.webp"
                 alt="Waterproof soft panniers mounted on the rear of an adventure motorcycle" class="gear-img"
                 loading="lazy">
             </div>
@@ -785,8 +818,8 @@
           <!-- Gear Item 3 -->
           <article class="card-rule gear-card">
             <div class="gear-image-box">
-              <img src="https://images.unsplash.com/photo-1520639888713-7851133b1ed0?q=80&amp;w=800"
-                alt="Gore-Tex adventure riding boots on a gravel trail" class="gear-img" loading="lazy">
+              <img src="assets/images/gear-sidi-boots.webp" alt="Gore-Tex adventure riding boots on a gravel trail"
+                class="gear-img" loading="lazy">
             </div>
             <div class="gear-card-header">
               <div class="gear-icon-box">
@@ -868,8 +901,8 @@
           <!-- Gear Item 4 -->
           <article class="card-rule gear-card">
             <div class="gear-image-box">
-              <img src="https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f?q=80&amp;w=800"
-                alt="Action camera creator kit laid out for filming a ride" class="gear-img" loading="lazy">
+              <img src="assets/images/gear-dji-action4.webp" alt="Action camera creator kit laid out for filming a ride"
+                class="gear-img" loading="lazy">
             </div>
             <div class="gear-card-header">
               <div class="gear-icon-box">
@@ -963,7 +996,7 @@
         <div class="gallery-grid">
           <!-- Item 1 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Atacama.')">
-            <img src="https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&amp;w=600"
+            <img src="assets/images/gallery-atacama-salt-flats.webp"
               alt="Adventure motorcycle on salt flats during sunset" class="gallery-img" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-caption" data-i18n="gallery.img_1_caption">Crossing Atacama, Chile</span>
@@ -972,7 +1005,7 @@
 
           <!-- Item 2 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Iceland.')">
-            <img src="https://images.unsplash.com/photo-1533240332313-0db49b439ad3?q=80&amp;w=600"
+            <img src="assets/images/gallery-iceland-glacier-ford.webp"
               alt="Rider riding motorcycle through water crossing in mountain background" class="gallery-img"
               loading="lazy">
             <div class="gallery-overlay">
@@ -982,7 +1015,7 @@
 
           <!-- Item 3 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Alps.')">
-            <img src="https://images.unsplash.com/photo-1504280390367-361c6d9f38f4?q=80&amp;w=600"
+            <img src="assets/images/gallery-alps-campsite.webp"
               alt="Camping tent pitched next to adventure bike under mountain starry sky" class="gallery-img"
               loading="lazy">
             <div class="gallery-overlay">
@@ -992,8 +1025,8 @@
 
           <!-- Item 4 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Pamir.')">
-            <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&amp;w=600"
-              alt="Changing tire on dirt mountain roadside" class="gallery-img" loading="lazy">
+            <img src="assets/images/gallery-pamir-tire-repair.webp" alt="Changing tire on dirt mountain roadside"
+              class="gallery-img" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-caption" data-i18n="gallery.img_4_caption">Roadside Tire Repair, Pamir Highway</span>
             </div>
@@ -1001,7 +1034,7 @@
 
           <!-- Item 5 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Karakoram.')">
-            <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?q=80&amp;w=600"
+            <img src="assets/images/gallery-karakoram-sunrise.webp"
               alt="Muddy river crossing on a remote mountain trail" class="gallery-img" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-caption" data-i18n="gallery.img_5_caption">Sunrise over Karakoram Range,
@@ -1011,8 +1044,8 @@
 
           <!-- Item 6 -->
           <div class="gallery-item" onclick="alert('Image modal display simulated for Sahara.')">
-            <img src="https://images.unsplash.com/photo-1509316975850-ff9c5deb0cd9?q=80&amp;w=600"
-              alt="Motorbike riding over desert dunes" class="gallery-img" loading="lazy">
+            <img src="assets/images/gallery-sahara-dunes.webp" alt="Motorbike riding over desert dunes"
+              class="gallery-img" loading="lazy">
             <div class="gallery-overlay">
               <span class="gallery-caption" data-i18n="gallery.img_6_caption">Dunes of Sahara, Morocco</span>
             </div>
@@ -1106,7 +1139,7 @@
           <!-- Item 1 -->
           <article class="card-rule merch-card">
             <div class="merch-image-box">
-              <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?q=80&amp;w=400"
+              <img src="assets/images/merch-trailblazer-hoodie.webp"
                 alt="Black heavy hoodie laid flat on workshop floor" class="merch-img" loading="lazy">
               <span class="merch-price">$55.00</span>
             </div>
@@ -1125,8 +1158,8 @@
           <!-- Item 2 -->
           <article class="card-rule merch-card">
             <div class="merch-image-box">
-              <img src="https://images.unsplash.com/photo-1588850561407-ed78c282e89b?q=80&amp;w=400"
-                alt="Mesh cap embroidered logo" class="merch-img" loading="lazy">
+              <img src="assets/images/merch-original-cap.webp" alt="Mesh cap embroidered logo" class="merch-img"
+                loading="lazy">
               <span class="merch-price">$28.00</span>
             </div>
             <div class="merch-details">
@@ -1143,7 +1176,7 @@
           <!-- Item 3 -->
           <article class="card-rule merch-card">
             <div class="merch-image-box">
-              <img src="https://images.unsplash.com/photo-1597239450996-ea7c2c564412?q=80&amp;w=400"
+              <img src="assets/images/merch-decal-pack.webp"
                 alt="Pack of adhesive stickers styled with motorcycling icons" class="merch-img" loading="lazy">
               <span class="merch-price">$12.00</span>
             </div>
@@ -1160,7 +1193,6 @@
         </div>
       </div>
     </section>
-
     <!-- CTA BANNER (Step 9 newsletter signup) -->
     <section>
       <div class="container">
@@ -1367,8 +1399,10 @@
         <ul class="footer-links">
           <li>
             <a href="https://youtube.com/c/motovlogz" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
-                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17Z" />
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+                <path
+                  d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17Z" />
                 <path d="m10 15 5-3-5-3v6Z" />
               </svg>
               YouTube
@@ -1376,7 +1410,8 @@
           </li>
           <li>
             <a href="https://instagram.com/motovlogz" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
                 <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
                 <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37zM17.5 6.5h.01" />
               </svg>
@@ -1385,7 +1420,8 @@
           </li>
           <li>
             <a href="https://tiktok.com/@motovlogz" target="_blank" rel="noopener noreferrer">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="16" height="16">
                 <path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5" />
               </svg>
               TikTok

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburgerBtn = document.getElementById('hamburger-btn');
   const drawerMenu = document.getElementById('drawer-menu');
   const drawerOverlay = document.getElementById('drawer-overlay');
-  const drawerLinks = document.querySelectorAll('.drawer-link');
+  const drawerLinks = document.querySelectorAll('.drawer-link, .drawer-actions .btn-primary');
   const videoOverlayPlay = document.getElementById('video-overlay-play');
   const youtubePlayer = document.getElementById('youtube-player');
   
