@@ -1677,13 +1677,26 @@ select.form-control {
 }
 
 .footer-links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
   font-size: 0.9rem;
   color: var(--color-text-muted);
+  transition: color var(--transition), padding-left var(--transition);
 }
 
 .footer-links a:hover {
   color: var(--color-primary);
   padding-left: 4px;
+}
+
+.footer-links a svg {
+  flex-shrink: 0;
+  transition: transform var(--transition);
+}
+
+.footer-links a:hover svg {
+  transform: scale(1.15);
 }
 
 .footer-bottom {
